@@ -100,3 +100,19 @@ def validate_users(users):
 
 
 validate_users(["purplecat"])
+
+
+heights = [161, 164, 156, 144, 158, 170, 163, 163, 157]
+
+can_ride_coaster = [height for height in heights if height > 161]
+print(can_ride_coaster)
+
+single_digits = list(range(0, 10))
+squares = []
+cubes = [digit ** 3 for digit in single_digits]
+
+for digit in single_digits:
+    squares.append(digit ** 2)
+
+print(squares)
+print(cubes)
