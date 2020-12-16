@@ -72,3 +72,16 @@ def odd_indices(lst):
 
 
 print(odd_indices([4, 3, 7, 10, 11, -2]))
+
+# Create a function named exponents() that takes two lists as parameters named
+# ases and powers. Return a new list containing every number in bases raised
+# to every number in powers.
+
+
+def exponents(bases, powers):
+    new_bases = []
+    for base in bases:
+        for power in powers:
+            new_bases.append(base ** power)
+    return new_bases
+    
