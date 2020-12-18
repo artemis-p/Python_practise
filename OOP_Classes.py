@@ -37,3 +37,12 @@ class Person:
 some_person = Person("Luke") 
 # Call the greeting method
 print(some_person.greeting())
+
+class Person:
+  def __init__(self, name):
+    self.name = name
+  def greeting(self):
+    """Outputs a message with the name of the person"""
+    print("Hello! My name is {name}.".format(name=self.name)) 
+
+help(Person)
