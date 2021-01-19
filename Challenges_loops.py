@@ -121,7 +121,7 @@ def over_nine_thousand(lst):
       sum += i
     elif lst == []:
       return 0
-      
+
   return sum
 
 
@@ -136,3 +136,15 @@ def over_nine_thousand(lst):
       break
 
   return sum
+
+
+# Create a function named max_num() that takes a list of numbers named nums as a parameter.
+
+# The function should return the largest number in nums
+
+def max_num(nums):
+  nums.sort()
+  for i in nums:
+    return max(nums)
+
+print(max_num([50, -10, 0, 75, 20]))
