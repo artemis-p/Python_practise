@@ -90,10 +90,7 @@ print(combine_sort([4, 10, 2, 5], [-10, 2, 5, 10]))
 # an empty list.
 
 def every_three_nums(start):
-  if (start > 100):
-    return []
-  else:
-    return list(range(start, 101, 3))
+  return list(range(start, 101, 3))
 
 
 print(every_three_nums(101))
