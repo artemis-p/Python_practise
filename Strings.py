@@ -40,3 +40,17 @@ def student_grade(name, grade):
 print(student_grade("Reed", 80))
 print(student_grade("Paige", 92))
 print(student_grade("Jesse", 85))
+
+
+def username_generator(first_name, last_name):
+  if (len(first_name) < 3) or (len(last_name) < 4):
+    username = first_name + last_name
+  else: 
+    username = first_name[:3] + last_name[:4]
+  return username
+
+def password_generator(username):
+  password = ""
+  for i in range(0, len(username)):
+    password += username[i-1] 
+  return password
